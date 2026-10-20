@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Афиша концертов, культурных событий и экскурсий.">
+  <title>Афиша культурных событий</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="wordmark" href="#home">Концертно-экскурсионные программы</a>
+      <nav class="navigation" aria-label="Главное меню">
+        <a href="#events">Афиша</a><a href="#events">Билеты</a><a href="#contacts">Контакты</a>
+        <a href="#about">История дворца</a><a href="#news">Галерея</a><a href="#calendar">Планы залов</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap" id="home">
+    <section class="feature" aria-label="Ближайшие программы">
+      <div class="feature__image"><img src="assets/theater.png" alt="Театральная сцена и зрительный зал"></div>
+      <div class="feature__links">
+        <a class="feature-link" href="#opera"><img src="assets/opera-thumb.png" alt=""><span>Опера VS Оперетта</span><span class="feature-link__arrow">↗</span></a>
+        <a class="feature-link" href="#vivaldi"><img src="assets/hall.png" alt=""><span>Антонио Вивальди. Времена года</span><span class="feature-link__arrow">↗</span></a>
+      </div>
+    </section>
+
+    <section class="section events" id="events">
+      <div class="section__heading"><h1>Афиша</h1><a class="calendar-link" href="#calendar"><img src="assets/calendar-icon.png" alt=""><span>Все мероприятия</span></a></div>
+      <div class="event-grid">
+        <article class="event" id="vivaldi">
+          <div class="event__date"><strong>3</strong><span>июня</span></div>
+          <img class="event__poster" src="assets/vivaldi.png" alt="Зрительный зал на концерте">
+          <div class="event__body"><h2>Антонио Вивальди. Времена года</h2><p>Посвящение Фрэнку Синатре.</p><ul class="facts"><li><img src="assets/music-icon.png" alt="">Джаз</li><li><img src="assets/clock-icon.png" alt=""><time>19:00</time></li><li><img src="assets/person-icon.png" alt="">6+</li></ul></div>
+          <a class="ticket" href="#contacts">Заказать билет</a>
+        </article>
+        <article class="event" id="opera">
+          <div class="event__date"><strong>30</strong><span>июня</span></div>
+          <img class="event__poster" src="assets/opera.png" alt="Артисты оперетты на сцене">
+          <div class="event__body"><h2>Опера VS Оперетта</h2><p>Санкт-Петербургский камерный оркестр Olympic Orchestra</p><ul class="facts"><li><img src="assets/music-icon.png" alt="">Классика</li></ul></div>
+          <a class="ticket" href="#contacts">Заказать билет</a>
+        </article>
+      </div>
+    </section>
+
+    <div class="middle-layout">
+      <section class="section news" id="news"><h2 class="section__title">Новости</h2><div class="news-grid">
+        <article class="news-item"><img src="assets/news-gallery.png" alt="Выставочный зал"><h3>Переносы / Отмена мероприятий</h3><p>Концерт «Опера vs. Оперетта» переносится на новую дату. Следите за обновлениями афиши.</p></article>
+        <article class="news-item"><img src="assets/news-museum.png" alt="Экспозиция музея"><h3>Переносы / Отмена мероприятий</h3><p>Информация об изменениях в расписании культурных программ и экскурсий.</p></article>
+      </div></section>
+      <section class="tour" id="calendar"><div class="tour__cover"><img src="assets/excursion.png" alt="Исторический интерьер с картинами"><h2>Обзорные экскурсии</h2></div>
+        <div class="calendar"><div class="calendar__head"><h3 id="month-label">Июль</h3><div><button type="button" id="prev-month" aria-label="Предыдущий месяц">‹</button><button type="button" id="next-month" aria-label="Следующий месяц">›</button></div></div><div class="weekdays"><span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span></div><div class="days" id="calendar-days" aria-label="Календарь экскурсий"></div><p class="calendar-note"><span></span> Есть свободные места</p></div>
+      </section>
+    </div>
+
+    <section class="section short-news" id="about"><div class="section__heading"><h2 class="section__title">Краткие анонсы</h2><a class="calendar-link" href="#events"><img src="assets/calendar-icon.png" alt=""><span>Все мероприятия</span></a></div>
+      <div class="announcement-grid"><article><time datetime="2023-06-03"><strong>3</strong><span>июня</span></time><p>«Век имени Синатры»</p></article><article><time datetime="2023-06-10"><strong>10</strong><span>июня</span></time><p>Вечер классической музыки</p></article><article><time datetime="2023-06-17"><strong>17</strong><span>июня</span></time><p>Музыкальные встречи во дворце</p></article><article><time datetime="2023-06-24"><strong>24</strong><span>июня</span></time><p>Экскурсия по историческим залам</p></article></div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts"><div class="wrap"><div class="footer__columns"><a class="wordmark" href="#home">Концертно-экскурсионные программы</a><div><h2>Мероприятия</h2><a href="#calendar">Экскурсии</a><a href="#events">Концерты</a><a href="#events">Афиша</a></div><div><h2>Контакты</h2><address><p>г. Санкт-Петербург, Невский пр., д. 1</p><a href="mailto:text@mail.ru">text@mail.ru</a><a href="tel:+78121234567">(812) 123-45-67</a></address></div></div><p class="copyright">© Концертно-экскурсионные программы</p></div></footer>
+  <script src="site.js"></script>
+</body>
+</html>
